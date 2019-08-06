@@ -2,18 +2,18 @@
   <div class="sidebar-wrapper">
     <div class="content-wrapper">
       <div class="title">
-        <a class="h1" href="/">EVANAVEIT</a>
+        <nuxt-link class="h1" to="/">EVANAVEIT</nuxt-link>
       </div>
       <div class="menu">
         <ul>
           <li>
-            <a :class="{active : activeSidebar('about')}" href="/about">About</a>
+            <nuxt-link :class="{active : activeSidebar('about')}" to="/about">About</nuxt-link>
           </li>
           <li>
-            <a :class="{active : activeSidebar('projects')}" href="/projects">Projects</a>
+            <nuxt-link :class="{active : activeSidebar('projects')}" to="/projects">Projects</nuxt-link>
           </li>
           <li>
-            <a :class="{active : activeSidebar('contact')}" href="/contact">Contact</a>
+            <nuxt-link :class="{active : activeSidebar('contact')}" to="/contact">Contact</nuxt-link>
           </li>
         </ul>
       </div>
