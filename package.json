@@ -1,0 +1,27 @@
+{
+  "name": "EvaNave",
+  "version": "1.0.0",
+  "description": "My neat Nuxt.js project",
+  "author": "Carla Gonçalves",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "coffee-loader": "^0.9.0",
+    "coffeescript": "^2.4.1",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.18.9",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "push-dir": "^0.4.1",
+    "sass-loader": "^7.1.0"
+  }
+}
