@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <div>
-      <Sidebar />
       <Showcase />
       <Feed />
     </div>

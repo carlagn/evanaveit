@@ -36,12 +36,21 @@
 
 <style lang="scss" scoped>
 .projects-wrapper {
-  width: calc(100vw - 150px);
-  margin-left: 150px;
-  padding: 40px;
+  padding: 15px;
+  width: 100%;
+  margin-top: 50px;
+
+  @media (min-width: 550px) {
+    margin-left: 150px;
+    width: calc(100vw - 150px);
+    padding: 40px;
+  }
 
   .projects-list {
-    margin: 0 100px;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -91,6 +100,12 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+        }
+        @media (min-width: 550px) {
+          width: 100%;
+        }
+        @media (min-width: 675px) {
+          width: 50%;
         }
       }
     }

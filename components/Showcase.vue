@@ -9,14 +9,24 @@
 
 <style lang="scss" scoped>
 .content-wrapper {
-  width: calc(100vw - 150px);
-  margin-left: 150px;
-  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
   height: 100vh;
 
   img {
-    width: auto;
-    height: 100%;
+    max-width: 686px;
+    height: auto;
+    width: 100%;
+  }
+  @media (min-width: 390px) {
+    padding: 40px;
+  }
+  @media (min-width: 550px) {
+    width: calc(100vw - 150px);
+    margin-left: 150px;
   }
 }
 </style>

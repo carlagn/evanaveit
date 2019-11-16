@@ -16,31 +16,65 @@
 
 <style lang="scss" scoped>
   .about-wrapper {
-    width: calc(100vw - 150px);
-    margin-left: 150px;
-    padding: 40px;
-
+    padding: 10px;
+    width: 100%;
+    margin-top: 50px;
+    @media (min-width: 550px) {
+      margin-top: 0px;
+      width: calc(100vw - 150px);
+      margin-left: 150px;
+      padding: 40px;
+    }
     .about {
       display: flex;
-      margin: 0 100px;
+      max-width: 1000px;
+      margin: 0 auto;
+      flex-direction: column;
+      @media (min-width: 890px) {
+        flex-direction: row;
 
-      > div {
-        margin: 0 10px;
+        > div {
+          margin: 0 10px;
+        }
       }
     }
     .image-place {
-      width: 50%;
+      width: 70%;
+
+      img {
+        max-width: 100%;
+      }
+      @media (min-width: 700px) {
+        width: 50%;
+      }
     }
     .about-content {
-      width: 50%;
+      width: 100%;
 
       h2 {
-        font-size: 60px;
+        font-size: 30px;
         margin-bottom: 25px;
         line-height: 0.7;
+        margin-top: 20px;
       }
       p {
+        font-size: 14px;
         line-height: 1.5;
+      }
+      @media (min-width: 550px) {
+        h2 {
+          font-size: 60px;
+        }
+        p {
+          font-size: 16px;
+        }
+
+      }
+      @media (min-width: 890px) {
+        width: 50%;
+        h2 {
+          margin-top: 0;
+        }
       }
     }
   }
