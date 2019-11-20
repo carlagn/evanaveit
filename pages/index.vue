@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <Showcase />
-      <Feed />
+      <!-- <Feed /> -->
     </div>
   </div>
 </template>

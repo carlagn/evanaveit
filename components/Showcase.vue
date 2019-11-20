@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper">
-    <img src="https://placeimg.com/1000/1000/any">
+    <img src="~/assets/inauguracaomock.png">
   </div>
 </template>
 
