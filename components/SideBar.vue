@@ -14,7 +14,10 @@
             <nuxt-link :class="{active : activeSidebar('projects')}" to="/projects">Projects</nuxt-link>
           </li>
           <li>
-            <nuxt-link :class="{active : activeSidebar('contact')}" to="/contact">Contact</nuxt-link>
+            <a :class="{active : activeSidebar('contact')}" href="https://www.instagram.com/evanaveit" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a :class="{active : activeSidebar('contact')}" href="mailto:evanaveit@gmail.com">E-mail</a>
           </li>
         </ul>
       </div>
